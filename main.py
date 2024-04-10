@@ -24,7 +24,7 @@ y=target
 model=MultinomialNB()
 model.fit(X,y)
 
-st.header("Restaurant Sentiment Analysis",)
+st.header("Restaurant Review Sentiment Analysis",)
 with st.expander("Analyze Text"):
     text=st.text_input("Text Here: ")
     if text:
