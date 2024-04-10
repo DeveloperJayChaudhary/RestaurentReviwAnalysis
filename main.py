@@ -12,7 +12,7 @@ sw.remove("not")
 def text_cleaning(doc):
     doc=re.sub("[^a-zA-Z ]","",doc)
     return doc
-df=pd.read_csv("RestaurentReviwAnalysis\Restaurant_Reviews.tsv",sep="\t")
+df=pd.read_csv("Restaurant_Reviews.tsv",sep="\t")
 corpus=df.iloc[:,0].values
 target=df.iloc[:,-1].values
 
