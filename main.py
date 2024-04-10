@@ -50,6 +50,7 @@ with st.expander("Analyze Text"):
 
 
 with st.expander("Analyze CSV"):
+    st.write("You Should have a column Name as 'Review' for performing the task")
     upl=st.file_uploader("Upload File")
     def score(pre):
         clean=text_cleaning(pre)
